@@ -48,3 +48,9 @@ n2 = {x.upper(): x * 3 for x in 'beaerb'}
 print(n2)
 l_k_p = {i: {k.lower(): v for k, v in j.items()} for i, j in phones_price.items()}
 print(l_k_p)
+dictionary_1 = dict([('tim', 'bro'), ('leo', 'bro'), ('Ka4aH', 'not bro')])
+names = ['Leo', 'Ken', 'Michael', 'Mary', 'Nina']
+age = [32, 25, 56, 21, 37]
+ziP_Dict = dict(zip(names, age))
+another_girl = {'Zina': 42}
+ziP_Dict.update(another_girl)

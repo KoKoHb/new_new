@@ -54,3 +54,6 @@ age = [32, 25, 56, 21, 37]
 ziP_Dict = dict(zip(names, age))
 another_girl = {'Zina': 42}
 ziP_Dict.update(another_girl)
+New_prices = {mag: {key: value + 100 for key, value in model.items()} for mag, model in phones_price.items()}
+New_prices['CibeR']['A43'] = 10999
+

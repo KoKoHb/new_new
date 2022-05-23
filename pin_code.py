@@ -7,6 +7,10 @@
 # "a234"   -->  false
 
 def validate_pin(pin):
+    return len(pin) in (4, 6) and pin.isdigit()
+
+
+def validate_pin_my(pin):
     if pin.isdigit() == True and (len(pin) == 4 or len(pin) == 6):
         return True
     return False

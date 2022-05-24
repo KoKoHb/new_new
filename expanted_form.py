@@ -6,18 +6,12 @@
 # NOTE: All numbers will be whole numbers greater than 0.
 
 def expanded_form(num):
-    s = str(num)
-    n = ''
-    b = str()
-    if s == '0':
-        return n
-    for i in range(len(s) - 1, -1, -1):
-        if s[i] != '0':
-            n = s[i:]
-            s = str(int(num) - int(n))
-            return ''.join(expanded_form(s) + n)
-
+    s = []
+    i = len(str(num)) -1
+    for n in str(num):
+        if n != "0":
+            s.append(n + "0" * i)
+        i -= 1
+    return " + ".join(s)
 
 print(expanded_form(70304))
-
-
